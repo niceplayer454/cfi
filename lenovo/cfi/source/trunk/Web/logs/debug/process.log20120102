@@ -1,0 +1,3 @@
+﻿2012-01-02 12:35:15,881 [10320] ERROR Lenovo.CFI.Identity.IdentityCookieHttpModule [(null)] - Session_Start Error(Auto Cookie):System.InvalidCastException: Unable to cast object of type 'Lenovo.Demo.Identity.IdentityInfo' to type 'Lenovo.CFI.Identity.IdentityInfo'.
+   at Lenovo.CFI.Identity.IdentityCookieHttpModule.GetAuthCookieIdentity(HttpContext context) in H:\SoftDev\Lenovo\CFI\WS\Identity\IdentityCookieHttpModule.cs:line 97
+   at Lenovo.CFI.Identity.IdentityCookieHttpModule.Session_Start(Object sender, EventArgs e) in H:\SoftDev\Lenovo\CFI\WS\Identity\IdentityCookieHttpModule.cs:line 62

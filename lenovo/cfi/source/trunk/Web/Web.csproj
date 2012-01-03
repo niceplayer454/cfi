@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AACC3B58-71C4-4DD6-9696-CA867C313B29}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lenovo.CFI.Web</RootNamespace>
+    <AssemblyName>Lenovo.CFI.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30512.20315, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Dotnet.Commons.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6dc10840add6b845, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Dotnet.Commons.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.DynamicData, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.DynamicData\3.5.0.0__31bf3856ad364e35\System.Web.DynamicData.dll</HintPath>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="TB.Web.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8ffb54fa7f82d624, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\TB.Net\Mine\WebComponent\1.0.0.0\Source\bin\Release\TB.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="TB.Web.DataControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=07f494603dbc753d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\TB.Net\Mine\WebComponent\1.0.0.0\Source\bin\Release\TB.Web.DataControl.dll</HintPath>
+    </Reference>
+    <Reference Include="TB.Web.NavComponent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=83576787bd14e1f0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\TB.Web.NavComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="TB.Web.UI.DatePicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=877db12a29cd289b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\TB.Net\Mine\WebComponent\1.0.0.0\Source\bin\Release\TB.Web.UI.DatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="TB.Web.UI.PopupWin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=687fbc7abfdfffdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\TB.Net\Mine\WebComponent\1.0.0.0\Source\bin\Release\TB.Web.UI.PopupWin.dll</HintPath>
+    </Reference>
+    <Reference Include="TB.Web.UI.Searcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d8744af4a81ea27a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\TB.Net\Mine\WebComponent\1.0.0.0\Source\bin\Release\TB.Web.UI.Searcher.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="File.aspx" />
+    <Content Include="js\DisableEnter.js" />
+    <Content Include="logs\logging.xml" />
+    <Content Include="Default.aspx" />
+    <Content Include="js\jquery-1.4.2.js" />
+    <Content Include="js\jquery-1.4.2.min.js" />
+    <Content Include="js\mtedit.js" />
+    <Content Include="themes\Default\login.css" />
+    <Content Include="themes\Default\VP\cfg\cfgdata.css" />
+    <Content Include="themes\Default\VP\cfg\cfgcalendar.css" />
+    <Content Include="themes\Default\VP\cfg\cfgparas.css" />
+    <Content Include="themes\Default\VP\autocomplete.css" />
+    <Content Include="themes\Default\VP\cfg\cfgusermgt.css" />
+    <Content Include="themes\Default\VP\cfg\cfguserinfo.css" />
+    <Content Include="themes\Default\VP\home.css" />
+    <Content Include="UserControls\AsyncFileUpload.ascx" />
+    <Content Include="UserControls\MultiAsyncFileUpload.ascx" />
+    <Content Include="VP\Cfg\CfgUserDelegate.ascx" />
+    <Content Include="VP\Cfg\CfgUserInfo.ascx" />
+    <Content Include="VP\Cfg\CfgData.ascx" />
+    <Content Include="VP\Demo\ApproverList.ascx" />
+    <Content Include="VP\Demo\DcList.ascx" />
+    <Content Include="VP\Demo\Feedback.ascx" />
+    <Content Include="VP\Demo\Help.ascx" />
+    <Content Include="VP\Demo\IdeaReview.ascx" />
+    <Content Include="VP\Demo\MyIdeaDetail.ascx" />
+    <Content Include="VP\Demo\MyIdeaList.ascx" />
+    <Content Include="VP\Demo\MyIdeaNew.ascx" />
+    <Content Include="VP\Demo\Search.ascx" />
+    <Content Include="VP\Demo\Stat.ascx" />
+    <Content Include="VP\Demo\TopicDcIP.ascx" />
+    <Content Include="VP\Demo\TopicDetail.ascx" />
+    <Content Include="VP\Demo\TopicList.ascx" />
+    <Content Include="VP\Demo\TopicRecord.ascx" />
+    <Content Include="VP\Demo\TopicSchedule.ascx" />
+    <Content Include="VP\Demo\TopicSummary.ascx" />
+    <Content Include="VP\Demo\TopicTrack.ascx" />
+    <Content Include="VP\Demo\TopicReviewer.ascx" />
+    <Content Include="VP\Home.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WS\AjaxUser.asmx" />
+    <Content Include="WS\AjaxUserAc.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="404NotFound.aspx.cs">
+      <DependentUpon>404NotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404NotFound.aspx.designer.cs">
+      <DependentUpon>404NotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="File.aspx.cs">
+      <DependentUpon>File.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="File.aspx.designer.cs">
+      <DependentUpon>File.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\VeticleHeaderTemplate.cs" />
+    <Compile Include="Helper\LiteralTemplate.cs" />
+    <Compile Include="Helper\MimeTypesHelper.cs" />
+    <Compile Include="Helper\FileDUHelper.cs" />
+    <Compile Include="Helper\ErrorHelper.cs" />
+    <Compile Include="Helper\MessageHelper.cs" />
+    <Compile Include="Helper\UrlHelper.cs" />
+    <Compile Include="Helper\UserHelper.cs" />
+    <Compile Include="Helper\Utils\StringHelper.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Open.aspx.cs">
+      <DependentUpon>Open.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Open.aspx.designer.cs">
+      <DependentUpon>Open.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\AsyncFileUpload.ascx.cs">
+      <DependentUpon>AsyncFileUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AsyncFileUpload.ascx.designer.cs">
+      <DependentUpon>AsyncFileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MultiAsyncFileUpload.ascx.cs">
+      <DependentUpon>MultiAsyncFileUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\MultiAsyncFileUpload.ascx.designer.cs">
+      <DependentUpon>MultiAsyncFileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Cfg\CfgUserDelegate.ascx.cs">
+      <DependentUpon>CfgUserDelegate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Cfg\CfgUserDelegate.ascx.designer.cs">
+      <DependentUpon>CfgUserDelegate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Cfg\CfgUserInfo.ascx.cs">
+      <DependentUpon>CfgUserInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Cfg\CfgUserInfo.ascx.designer.cs">
+      <DependentUpon>CfgUserInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Cfg\CfgData.ascx.cs">
+      <DependentUpon>CfgData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Cfg\CfgData.ascx.designer.cs">
+      <DependentUpon>CfgData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\ApproverList.ascx.cs">
+      <DependentUpon>ApproverList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\ApproverList.ascx.designer.cs">
+      <DependentUpon>ApproverList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\DcList.ascx.cs">
+      <DependentUpon>DcList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\DcList.ascx.designer.cs">
+      <DependentUpon>DcList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\Feedback.ascx.cs">
+      <DependentUpon>Feedback.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\Feedback.ascx.designer.cs">
+      <DependentUpon>Feedback.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\Help.ascx.cs">
+      <DependentUpon>Help.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\Help.ascx.designer.cs">
+      <DependentUpon>Help.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\IdeaReview.ascx.cs">
+      <DependentUpon>IdeaReview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\IdeaReview.ascx.designer.cs">
+      <DependentUpon>IdeaReview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\MyIdeaDetail.ascx.cs">
+      <DependentUpon>MyIdeaDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\MyIdeaDetail.ascx.designer.cs">
+      <DependentUpon>MyIdeaDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\MyIdeaList.ascx.cs">
+      <DependentUpon>MyIdeaList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\MyIdeaList.ascx.designer.cs">
+      <DependentUpon>MyIdeaList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\MyIdeaNew.ascx.cs">
+      <DependentUpon>MyIdeaNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\MyIdeaNew.ascx.designer.cs">
+      <DependentUpon>MyIdeaNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\Search.ascx.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\Search.ascx.designer.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\Stat.ascx.cs">
+      <DependentUpon>Stat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\Stat.ascx.designer.cs">
+      <DependentUpon>Stat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\TopicDcIP.ascx.cs">
+      <DependentUpon>TopicDcIP.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\TopicDcIP.ascx.designer.cs">
+      <DependentUpon>TopicDcIP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\TopicDetail.ascx.cs">
+      <DependentUpon>TopicDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\TopicDetail.ascx.designer.cs">
+      <DependentUpon>TopicDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\TopicList.ascx.cs">
+      <DependentUpon>TopicList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\TopicList.ascx.designer.cs">
+      <DependentUpon>TopicList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\TopicRecord.ascx.cs">
+      <DependentUpon>TopicRecord.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\TopicRecord.ascx.designer.cs">
+      <DependentUpon>TopicRecord.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\TopicSchedule.ascx.cs">
+      <DependentUpon>TopicSchedule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\TopicSchedule.ascx.designer.cs">
+      <DependentUpon>TopicSchedule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\TopicSummary.ascx.cs">
+      <DependentUpon>TopicSummary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\TopicSummary.ascx.designer.cs">
+      <DependentUpon>TopicSummary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\TopicTrack.ascx.cs">
+      <DependentUpon>TopicTrack.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\TopicTrack.ascx.designer.cs">
+      <DependentUpon>TopicTrack.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Demo\TopicReviewer.ascx.cs">
+      <DependentUpon>TopicReviewer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Demo\TopicReviewer.ascx.designer.cs">
+      <DependentUpon>TopicReviewer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VP\Home.ascx.cs">
+      <DependentUpon>Home.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VP\Home.ascx.designer.cs">
+      <DependentUpon>Home.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WS\AjaxUser.asmx.cs">
+      <DependentUpon>AjaxUser.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WS\AjaxUserAc.aspx.cs">
+      <DependentUpon>AjaxUserAc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WS\AjaxUserAc.aspx.designer.cs">
+      <DependentUpon>AjaxUserAc.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{381E9549-D925-45AD-9ED4-C50455DC5ED8}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{DBBB3F05-99FC-42A4-AFC8-FF2F566A3F2C}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DicMgr\DicMgr.csproj">
+      <Project>{BACC3139-D2EB-4666-8C62-2B0550559980}</Project>
+      <Name>DicMgr</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Identity\Identity.csproj">
+      <Project>{DDD77A53-D4A6-4B74-85AC-04D4FDC10732}</Project>
+      <Name>Identity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebControls\WebControls.csproj">
+      <Project>{4925D569-D951-4ABF-A9AD-531982A7BAF6}</Project>
+      <Name>WebControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SysConfig\Nav\Nav.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Browsers\DefaultAdapters.browser" />
+    <Content Include="Logout.aspx" />
+    <Content Include="UserControls\Footer.ascx" />
+    <Content Include="UserControls\Header.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\images\button\btnBgBlue2_.jpg" />
+    <Content Include="App_Themes\Default\images\button\btnBgBlue4.jpg" />
+    <Content Include="App_Themes\Default\images\button\btnBgBlue6.jpg" />
+    <Content Include="App_Themes\Default\images\button\btnBgGray2.jpg" />
+    <Content Include="App_Themes\Default\images\button\btnBgGray4.jpg" />
+    <Content Include="App_Themes\Default\images\button\btnBgGray6.jpg" />
+    <Content Include="App_Themes\Default\images\button\opAgree.gif" />
+    <Content Include="App_Themes\Default\images\button\opAudit.gif" />
+    <Content Include="App_Themes\Default\images\button\opCancel.png" />
+    <Content Include="App_Themes\Default\images\button\opDel.gif" />
+    <Content Include="App_Themes\Default\images\button\opDetail.gif" />
+    <Content Include="App_Themes\Default\images\button\opEdit.gif" />
+    <Content Include="App_Themes\Default\images\button\opReject.gif" />
+    <Content Include="App_Themes\Default\images\button\opUpdate.gif" />
+    <Content Include="Global.asax" />
+    <Content Include="themes\Default\common.css" />
+    <Content Include="themes\Default\images\bodyBg.jpg" />
+    <Content Include="themes\Default\images\footer.png" />
+    <Content Include="themes\Default\images\header.png" />
+    <Content Include="themes\Default\images\listOp.gif" />
+    <Content Include="themes\Default\images\listTitleBg.jpg" />
+    <Content Include="themes\Default\images\menu\firstBg.gif" />
+    <Content Include="themes\Default\images\menu\firstLeft.gif" />
+    <Content Include="themes\Default\images\menu\firstRight.gif" />
+    <Content Include="themes\Default\images\menu\secondBg.gif" />
+    <Content Include="themes\Default\images\tbBack.gif" />
+    <Content Include="themes\Default\images\tbEdit.gif" />
+    <Content Include="themes\Default\images\tbFresh.gif" />
+    <Content Include="themes\Default\images\tbNew.gif" />
+    <Content Include="themes\Default\images\tbNew2.gif" />
+    <Content Include="themes\Default\list.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404NotFound.aspx" />
+    <Content Include="App_Themes\Default\Common.skin" />
+    <Content Include="App_Themes\Default\images\button\opInsert.gif" />
+    <Content Include="Error.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Open.aspx" />
+    <Content Include="themes\Default\images\detail.gif" />
+    <Content Include="themes\Default\images\down.png" />
+    <Content Include="themes\Default\images\header.bmp" />
+    <Content Include="themes\Default\images\listTitleBgH.jpg" />
+    <Content Include="themes\Default\images\passItem.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\!noexpand.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\blank.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\dash.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\dashminus.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\dashplus.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\i.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\l.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\lminus.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\lplus.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\minus.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\noexpand.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\plus.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\r.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\rminus.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\rplus.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\t.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\tminus.gif" />
+    <Content Include="themes\Default\images\TreeViewLines\tplus.gif" />
+    <Content Include="themes\Default\images\unPassItem.gif" />
+    <Content Include="themes\Default\images\up.png" />
+    <Content Include="themes\Default\open.css" />
+    <Content Include="themes\Default\DatePicker\datepicker.css" />
+    <Content Include="themes\Default\DatePicker\images\btnMonthNext.gif" />
+    <Content Include="themes\Default\DatePicker\images\BtnMonthPrev.gif" />
+    <Content Include="themes\Default\DatePicker\images\btnYearNext.gif" />
+    <Content Include="themes\Default\DatePicker\images\btnYearPrev.gif" />
+    <Content Include="themes\Default\DatePicker\images\datePicker.gif" />
+    <Content Include="themes\Default\DatePicker\images\selected.gif" />
+    <Content Include="themes\Default\DatePicker\images\today.gif" />
+    <Content Include="themes\Default\DatePicker\images\today_selected.gif" />
+    <Content Include="themes\Default\DatePicker\images\zh-cn\none.gif" />
+    <Content Include="themes\Default\DatePicker\images\zh-cn\today.gif" />
+    <Content Include="themes\Default\images\opEdit.gif" />
+    <Content Include="themes\Default\images\opInsert.gif" />
+    <Content Include="themes\Default\modaldialogs.css" />
+    <Content Include="themes\Default\Searcher\collapse.bmp" />
+    <Content Include="themes\Default\Searcher\collapse.jpg" />
+    <Content Include="themes\Default\Searcher\searcher.css" />
+    <Content Include="themes\Default\tilebg_tablecaption.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\jquery.autocomplete.js" />
+    <Content Include="SysConfig\VP\vpg.vpg.config" />
+    <Content Include="SysConfig\VP\08CFG.vp.config" />
+    <Content Include="SysConfig\VP\00Home.vp.config" />
+    <Content Include="SysConfig\VP\Tmp.vp.config" />
+    <None Include="themes\Default\DatePicker\images\zh-cn\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="templates\" />
+    <Folder Include="UC\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6168</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/EWG</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

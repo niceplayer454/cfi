@@ -1,0 +1,138 @@
+A:link
+{
+	color: #3a4273;
+	text-decoration: none;
+}
+A:hover
+{
+	text-decoration: underline;
+}
+A:visited
+{
+	color: #464f86;
+	text-decoration: none;
+}
+SELECT
+{
+	font-weight: normal;
+	font-size: 12px;
+	color: #464f86;
+	font-family: ËÎÌו;
+	background-color: #e3e3ea;
+}
+BODY
+{
+	font-size: 12px;
+	SCROLLBAR-ARROW-COLOR: #5c5c8d;
+	SCROLLBAR-BASE-COLOR: #e3e3ea;
+}
+TABLE
+{
+	font-size: 12px;
+	SCROLLBAR-ARROW-COLOR: #5c5c8d;
+	SCROLLBAR-BASE-COLOR: #e3e3ea;
+}
+TR
+{
+	font-size: 12px;
+	SCROLLBAR-ARROW-COLOR: #5c5c8d;
+	SCROLLBAR-BASE-COLOR: #e3e3ea;
+}
+TD
+{
+	font-size: 12px;
+	SCROLLBAR-ARROW-COLOR: #5c5c8d;
+	SCROLLBAR-BASE-COLOR: #e3e3ea;
+}
+TEXTAREA
+{
+	font-weight: normal;
+	font-size: 12px;
+	color: #464f86;
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	background-color: #e3e3ea;
+}
+INPUT
+{
+	font-weight: normal;
+	font-size: 12px;
+	color: #464f86;
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	background-color: #e3e3ea;
+}
+OBJECT
+{
+	font-weight: normal;
+	font-size: 12px;
+	color: #464f86;
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	background-color: #e3e3ea;
+}
+.bold
+{
+	font-weight: bold;
+}
+.subject
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: #464f86;
+	font-family: Tahoma,Verdana;
+}
+.post
+{
+	font-weight: normal;
+	font-family: Tahoma,Verdana;
+}
+.header
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: #f1f3fb;
+	font-family: Tahoma,Verdana;
+	background-color: #5c5c8d;
+}
+.category
+{
+	font-size: 12px;
+	color: #d9d9e9;
+	font-family: Tahoma,Verdana;
+}
+.tablerow
+{
+	font-size: 12px;
+	color: #464f86;
+	font-family: Tahoma,Verdana;
+}
+.nav
+{
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Tahoma,Verdana;
+}
+.smalltxt
+{
+	font-size: 12px;
+	color: #464f86;
+	font-family: Tohoma, Arial, Verdana;
+}
+.mediumtxt
+{
+	font-weight: normal;
+	font-size: 12px;
+	color: #464f86;
+	font-family: Tahoma,Verdana;
+}
+.navtd
+{
+	font-size: 12px;
+	color: #f1f3fb;
+	font-family: Tahoma,Verdana;
+	text-decoration: none;
+}
+.multi
+{
+	font-size: 12px;
+	color: #3a4273;
+	font-family: Tahoma,Verdana;
+}

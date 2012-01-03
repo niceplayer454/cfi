@@ -1,0 +1,272 @@
+.foo {} /* W3C CSS validator likes CSS files to start with a class rather than a comment. Soooooo.... */
+
+/*
+//--------------------------------------------------------------------------------
+// TB DatePicker - A DatePicker WebControl for .NET software
+// Copyright (C) 2007 ThinkBean (ThinkBean@126.com)
+//--------------------------------------------------------------------------------
+*/
+
+/*datePicker div*/
+#datePickerSelector
+{
+	z-index: 999999; 
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border: black 1px solid;
+	width: 200px;
+	height: 188px;
+	background-color:#fff;
+	visibility: hidden;
+	font-size: 12px;
+	font-family: Arial,Helvetica,Sans-Serif;
+	text-align:center;
+	overflow-y:visible;
+}
+
+/*日历table*/
+#datePickerSelector table
+{
+	width: 96%; 
+	height: 140px;
+	border-spacing: 0px;
+    border: medium none;
+    background-color:#fff;
+}
+/*td 默认的样式*/
+#datePickerSelector table td
+{
+	padding:2px;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: MS Sans Serif;
+	width:22px;
+	text-align:center;
+}
+/*today*/
+#datePickerSelector table td.today
+{
+	font-weight: bold;
+	background-image: url(images/today.gif); 
+	background-repeat: no-repeat
+}
+/*todaySelected*/
+#datePickerSelector table td.todaySelected
+{
+	font-weight: bold;
+	background-image: url(images/today_selected.gif); 
+	background-repeat: no-repeat
+}
+/*selected*/
+#datePickerSelector table td.selected
+{
+	font-weight: bold;
+	background-image: url(images/selected.gif); 
+	background-repeat: no-repeat
+}
+/*title*/
+#datePickerSelector table tr.titleRow td
+{
+	color: #cccccc;
+	border-bottom: black 1px solid;
+}
+/*day in month*/
+#datePickerSelector table tr a.inMonth
+{
+	color: #000000;
+	height: 12px;
+	text-decoration: none;
+}
+/*day not in month*/
+#datePickerSelector table tr a.notInMonth
+{
+	color: #999999;
+	height: 12px;
+	text-decoration: none;
+}
+
+
+/*************************************/
+/*top div class*/
+#datePickerSelector .top
+{
+	margin:0px;
+	padding:2px 0px 2px 0px;
+	width:100%;
+	height:22px;
+	background-color: #dddddd;
+	font-size:12px;
+}
+/*month select*/
+#datePickerSelector .top select
+{
+	margin:0px 2px;
+	padding:0px;
+	width: 86px;
+	height:22px;
+	vertical-align:top;
+}
+/*year input*/
+#datePickerSelector .top input
+{
+	margin:-1px 0px 0px 0px;
+	padding:0px;
+	width: 40px;
+	height:17px;
+	line-height:17px;
+	vertical-align:top;
+	text-align:center;
+}
+/*month ctl image*/
+#datePickerSelector .top .monthBtn
+{
+	margin:0px;
+	padding:2px;
+	width:18px;
+	height:18px;
+	cursor:hand;
+	vertical-align:top;
+}
+/*year ctl image span*/
+#datePickerSelector .top .yearBtn
+{
+	margin:0px;
+	padding:2px;
+	width:18px;
+	height:18px;
+	display:inline-block;
+	
+}
+/*year ctl image*/
+#datePickerSelector .top .year img
+{
+	margin:0px;
+	padding:0px;
+	width:18px;
+	height:9px;
+	cursor:hand;
+}
+
+
+/*************************************/
+/*bottom div class*/
+#datePickerSelector .bottom
+{
+	margin:0px;
+	padding:3px 0px 1px 0px;
+	width:100%;
+	height:18px;
+	background-color: #dddddd;
+}
+/*ctl image*/
+#datePickerSelector .bottom img
+{
+	margin:0px;
+	padding:0px 2px;
+	border:medium none;
+	width:44px;
+	height:18px;
+	cursor:hand;
+	vertical-align:top;
+}
+/*today hint*/
+#datePickerSelector .bottom .todayHint
+{
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	width:104px;
+	height:18px;
+	line-height:18px;
+	text-align:center;
+}
+
+/*************************************/
+/*iframe*/
+#datePickerSelector iframe
+{
+	z-index: -1; 
+	position: absolute; 
+	width: 240px;
+	height: 240px;
+    left: -10px;  
+	top: -10px;
+	border:medium none;
+    visibility: inherit; 
+    filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+}
+
+
+/*************************************/
+/*default control css*/
+.datePicker
+{
+    display:inline-block;
+	text-decoration: none;	/*不显示链接*/
+	height:22px;			/*height and line-height*/
+	line-height:22px;
+	vertical-align:2px;
+}
+
+
+.datePicker .text
+{
+	vertical-align:middle;	/*关键 -- 用于对齐input and image*/
+	margin: 0px;
+	padding:2px 1px 2px 1px;
+	border:solid 1px #7f9db9;
+	border-right:0px;
+	height:14px;
+	line-height:14px;		/*height + border + padding = 20*/
+}
+.datePicker .btn
+{
+	vertical-align:middle;	/*关键 -- 用于对齐input and image*/
+	background-color:#fff;
+	background-image: url(images/datePicker.gif);
+	background-repeat:no-repeat;
+	background-position:70% 70%;
+	border:solid 1px #7f9db9;
+	border-left:0px;
+	padding:0px;
+	width:1.5em;
+	height:18px;
+	line-height:18px;		/*height + border + padding = 22*/
+	cursor: hand;
+	display:inline-block;
+}
+
+
+.datePicker .textDisabled
+{
+    vertical-align:middle;	/*关键 -- 用于对齐input and image*/
+	margin: 0px;
+	padding:2px 1px 2px 1px;
+	border:solid 1px #7f9db9;
+	border-right:0px;
+	height:14px;
+	line-height:14px;		/*height + border + padding = 20*/
+    filter:gray();
+	color: graytext; 
+	cursor: default;
+}
+.datePicker .btnDisabled
+{
+    vertical-align:middle;	/*关键 -- 用于对齐input and image*/
+	background-color:#fff;
+	background-image: url(images/datePicker.gif);
+	background-repeat:no-repeat;
+	background-position:70% 70%;
+	border:solid 1px #7f9db9;
+	border-left:0px;
+	padding:0px;
+	width:1.5em;
+	height:18px;
+	line-height:18px;		/*height + border + padding = 22*/
+	cursor: hand;
+	display:inline-block;
+	filter:gray();
+	color: graytext; 
+	cursor: default;
+}

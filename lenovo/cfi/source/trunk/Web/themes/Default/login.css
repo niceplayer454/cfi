@@ -1,0 +1,211 @@
+﻿.foo {} /* W3C CSS validator likes CSS files to start with a class rather than a comment. Soooooo.... */
+
+html
+{
+	min-width: 1024px;
+}
+body
+{
+	margin: 0px;
+	padding: 10px 0px 0px 0px;
+	height: 100%;
+	background-color:#F5F5FA;
+	font-family: 'Arial', 'Verdana', 'sans-serif', 'Times New Roman', 宋体;
+	font-size: 12px;
+	background-position:top;
+	background-repeat:repeat-x;
+}
+
+div,span,form,ul,li,img,iframe{margin: 0px;border: medium none;padding: 0px;}
+
+table,td,p {font-size:12px; font-family:'Arial', 'Verdana', 'sans-serif', 'Times New Roman', 宋体;}
+select,input {font-size:12px; font-family:'Arial', 'Verdana', 'sans-serif', 'Times New Roman', 宋体;}
+
+
+a {color: white;font-family: 'Arial', 'Verdana', 'sans-serif', 'Times New Roman', 宋体;text-decoration: none;}
+a:active {color: white;text-decoration: underline;}
+a:hover {color: white;text-decoration: underline;}
+
+
+/*header*/
+#header
+{
+	clear:both;
+	margin: 0px auto;
+	border:medium none;
+	min-width:1000px;
+	width:1000px;
+	height:106px;
+	text-align:center;
+	line-height:106px;
+	color:#DDDDFF;
+	background-image:url(images/header-default.png);
+	background-repeat:no-repeat;
+}
+
+/*footer*/
+#footer
+{
+	clear:both;
+	margin: 0px auto;
+	border:medium none;
+	min-width:1000px;
+	width:1000px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	color:Gray;
+	background-color:#01588c;
+}
+
+#ws
+{
+	clear:both;
+	margin: 0px auto;
+	border:medium none;
+	min-width:1000px;
+    width:1000px;
+	background-color:#F5F5FA;
+	padding:5px 0px 2px 0px;
+}
+
+#ws table td {padding:0px;}
+#ws .left
+{
+    width:200px;
+}
+
+#login
+{
+    background-color:#325a74;
+    color:White;
+    height:220px;
+}
+
+#login h2
+{
+    margin:0px;
+    padding:5px 0px 5px 4px;
+    border-bottom:3px solid white;
+    font-size:15px;
+}
+
+#login label
+{
+    display:inline-block;
+    padding-left:4px;
+    width:66px;
+}
+
+#login .username
+{
+    padding:20px 0px 0px 0px;
+}
+
+#login .password
+{
+    padding:6px 0px 0px 0px;
+}
+
+#login .operation
+{
+    margin:0px;
+    padding:30px 0px 0px 0px;
+    text-align:center;
+}
+
+#login .error
+{
+    margin:0px;
+    padding:20px 0px 0px 0px;
+    text-align:center;
+    color:Red;
+}
+
+
+#link
+{
+    margin:5px 0px 0px 0px;
+}
+
+#link h2
+{
+    margin:0px;
+    padding:5px 0px 5px 4px;
+    font-size:15px;
+    background-color:#7a96ac;
+    color:White;
+}
+
+#link ul
+{
+    margin: 0px;
+    padding: 0px;
+    list-style-type:none;
+}
+
+#link li
+{
+    margin:1px 0px 1px 0px;
+    padding:5px 0px 5px 4px;
+    background-color:#bdcdda;
+    color:#006699;
+}
+
+#link li a {color: #006699;}
+#link li a:active {color: #006699;}
+#link li a:hover {color: #006699;}
+
+#ws .right
+{
+    width:800px;
+}
+
+#title
+{
+    margin:0px;
+    padding:40px 0px 10px 0px;
+    width:100%;
+    font-size:26px;
+    text-align:center;
+    color:#325a74;
+}
+
+#intro
+{
+    margin:0px;
+    padding:0px 100px;
+    text-align:left;
+    color:#006699;
+    font-size:14px;
+}
+
+#update
+{
+    margin: 40px 0px 0px 50px;
+}
+#update h2
+{
+    padding: 5px 0px 5px 0px;
+    font-size: 15px;
+    background-color: #325a74;
+    color: White;
+}
+
+#update ul
+{
+    margin: 5px 0px 0px 50px;
+    padding: 0px 0px 0px 0px;
+    list-style-type: square;
+    list-style-position:inside;
+}
+
+#update li
+{
+    padding:4px 0px 4px 0px;
+    color:Gray;
+}
+
+#update li a {color: #0066cc;padding-left:16px;}
+#update li a:active {color: #993399;}
+#update li a:hover {color: #ff3300;}

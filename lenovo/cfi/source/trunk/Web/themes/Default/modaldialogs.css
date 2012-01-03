@@ -1,0 +1,42 @@
+/* ajax modal dialog styles */
+.modalBackground {
+	background-color: Gray;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+.modalBox
+{
+    border: 2px solid #fff;
+    background-color: #F5F5F5;
+    padding: 1px;
+}
+.modalBox .caption
+{
+    height: 22px;
+    line-height: 22px;
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 4px;
+    color: #fff;
+    background-color: #D14836;
+    background-image: url(images/modal_bg_red.png);
+    background-repeat: repeat-x;
+}
+
+
+.modalPanel {
+	z-index: 500;
+	width: 500px;
+	border: solid 1px #275473;
+	position: absolute;
+	border-collapse: collapse;
+	background-color: #f0faff;
+}
+
+.modalPanel td {
+	vertical-align: top;
+}
+
+.titleIcon {
+	padding-right: 20px;
+}

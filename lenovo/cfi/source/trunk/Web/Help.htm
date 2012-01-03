@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Help</title>
+    <link rel="stylesheet" href="themes/Default/common.css"></link>
+    <link rel="stylesheet" href="themes/Default/Help/help.css"></link>
+    <script language="javascript" type="text/javascript">
+        function chgTDColor(oTD) {
+            oTD.style.cursor = "hand";
+            if (oTD.style.backgroundColor == "") {
+                oTD.style.backgroundColor = "#E3E3EA";
+                if (oTD.className == "header") {
+                    oTD.style.color = "#464F86";
+                }
+            } else {
+                oTD.style.backgroundColor = "";
+                if (oTD.className == "header") {
+                    oTD.style.color = "#F1F3FB";
+                }
+            }
+        }
+
+        var nowopen = 0;
+
+        function showhideMenu(n) {
+            var oTR, oImg;
+            var noTR, noImg;
+
+            oTR = document.getElementById("tr" + n);
+            oImg = document.getElementById("img" + n);
+
+            if (oTR.style.display == "none") {
+                if (nowopen > 0) {
+                    noTR = document.getElementById("tr" + nowopen);
+                    noImg = document.getElementById("img" + nowopen);
+                    noTR.style.display = "none";
+                    noImg.src = "themes/Default/Help/arrow2.gif";
+                }
+                oTR.style.display = "block";
+                oImg.src = "themes/Default/Help/arrow1.gif";
+                oImg.parentElement.parentElement.bgColor = "#E3E3EA"
+                nowopen = n;
+                //注意修改此处
+                for (i = 1; i <= 1; i++) {
+                    if (i != n) {
+                        var mTR = document.getElementById("tr" + i);
+                        var mImg = document.getElementById("img" + i);
+                        mImg.parentElement.parentElement.bgColor = "";
+                    }
+                }
+            } else {
+                oTR.style.display = "none";
+                oImg.src = "themes/Default/Help/arrow2.gif";
+            }
+        }
+</script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="ws">
+<!--    <div style="text-align:right;padding-bottom:20px;"><a href="用户手册.doc">下载完整Word版用户手册</a></div>-->    
+        <table style="table-layout: fixed" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+        <tbody>
+            <tr>
+                <td>
+                    <table cellspacing="$borderwidth" cellpadding="$tablespace" width="100%" border="0">
+                        <tbody>
+                            <tr>
+                                <td width="100%" bgcolor="#eeeef6">
+                                    <table class="tablerow" cellspacing="0" cellpadding="0" width="100%" bgcolor="#FFFFDF"
+                                        border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td bgcolor="#000000" height="1">
+                                                </td>
+                                                <td bgcolor="#0B253D" height="1">
+                                                </td>
+                                            </tr>
+                                            <!--  这是完整的一个部分——开始   -->
+                                            <tr>
+                                                <td class="header" onmouseover="chgTDColor(this)" onclick="showhideMenu(1)"
+                                                    onmouseout="chgTDColor(this)">
+                                                    <img height="25" src="themes/Default/Help/arrow2.gif" align="absMiddle" name="img1" id="img1"><b>第一 系统概述</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td bgcolor="#000000" height="1">
+                                                </td>
+                                            </tr>
+                                            <tr id="tr1" style="display: none">
+                                                <td>
+                                                    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                                        <tbody>
+                                                            <!--  内容小节——开始       -->
+                                                            <tr>
+                                                                <td onmouseover="chgTDColor(this)" onmouseout="chgTDColor(this)">
+                                                                    <img height="25" src="themes/Default/Help/25x25.gif" width="25" align="absMiddle">1. IE要求7.0以上版本，推荐使用IE8.0；
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td bgcolor="#000000">
+                                                                </td>
+                                                            </tr>
+                                                            <!--  内容小节——结束       -->
+                                                            <!--  内容小节——开始       -->
+                                                            <tr>
+                                                                <td onmouseover="chgTDColor(this)" onmouseout="chgTDColor(this)">
+                                                                    <img height="25" src="themes/Default/Help/25x25.gif" width="25" align="absMiddle">2. IE“工具”菜单
+                                                                    / Internet选项 / “常规”标签 / “设置”按钮，将“检查所存网页的较新版本”设为“每次访问此页时检查”；
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td bgcolor="#000000">
+                                                                </td>
+                                                            </tr>
+                                                            <!--  内容小节——结束       -->
+                                                            <!--  内容小节——开始       -->
+                                                            <tr>
+                                                                <td onmouseover="chgTDColor(this)" onmouseout="chgTDColor(this)">
+                                                                    <img height="25" src="themes/Default/Help/25x25.gif" width="25" align="absMiddle">3. 在IE的“查看/文字大小”选项中请不要选择“最大”，其他的都可以；</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td bgcolor="#000000">
+                                                                </td>
+                                                            </tr>
+                                                            <!--  内容小节——结束       -->
+                                                            <!--  内容小节——开始       -->
+                                                            <tr>
+                                                                <td onmouseover="chgTDColor(this)" onmouseout="chgTDColor(this)">
+                                                                    <img height="25" src="themes/Default/Help/25x25.gif" width="25" align="absMiddle">4. 请尽量不要安装“上网助手”等工具，以免影响系统的正常使用。</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td bgcolor="#000000">
+                                                                </td>
+                                                            </tr>
+                                                            <!--  内容小节——结束       -->
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!--  这是完整的一个部分——结束   -->
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div id="footer">
+        <div id="copyright">Total Quality Management Platform</div>
+        <div id="company">Lenovo 2011 All Rights Reserved</div>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,23 @@
+ul.helpList
+{
+	list-style-position: outside;
+	list-style-type: circle;
+	margin:0px 40px;
+}
+
+ul li
+{
+	margin-bottom:20px;
+}
+
+.listTitle
+{
+	font-size:14px;
+	font-weight:bold;
+	padding-bottom:4px;
+}
+
+.listDetail
+{
+	padding-left:28px;
+}

@@ -1,0 +1,17 @@
+﻿#relatedoperation {width:1240px;line-height:20px;height:20px;text-align:left;padding:0px 0px 5px 8px;}
+#relatedoperation .op {padding:0px 0px 0px 10px;}
+
+.dataListArea {width:1240px}
+
+.dataListArea .date {width:200px;text-align:left;border-left:dotted 1px #7380af;}
+.dataListArea .isholiday {width:300px;text-align:left;border-left:dotted 1px #7380af;}
+.dataListArea .listOp {width:800px;text-align:left;border-left:dotted 1px #7380af;}
+
+
+.detail div {display: block;padding: 3px 0px;}
+.detail label.title {width:6em;display:inline-block;
+                     text-align: right;vertical-align:top;
+                     margin-top:0px;
+                     padding:3px 6px 2px 0px;}
+                     
+#totaloperation {width:1240px;text-align:center;}

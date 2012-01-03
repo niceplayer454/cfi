@@ -1,0 +1,32 @@
+﻿fieldset {margin:0px 0px 0px 0px;padding:12px 0px 20px 0px;border: medium none;border-bottom: solid 1px #ccc;width:1240px;}
+fieldset legend {margin: 0px;padding:2px 2px 2px 10px;color: #036;background: transparent;font-size: 1.1em; font-weight:bold;}
+fieldset div {display: block;padding: 3px 0px;}
+fieldset label {display:inline-block;text-align: left;margin-top:0px;padding-top:3px;padding-bottom:2px;vertical-align:top;}
+fieldset select  {vertical-align:top;}
+
+
+fieldset label.title {width:19em;display:inline-block;
+                     text-align: right;vertical-align:top;
+                     margin-top:0px;
+                     padding:3px 6px 2px 0px;}
+                     
+.dataListArea {padding-left:4em;width:1142px;}
+.dataListArea .productline {width:144px;text-align:left;border-left:dotted 1px #7380af;}
+.dataListArea .mail {width:964px;text-align:left;border-left:dotted 1px #7380af;}
+
+
+.rollcall .maillist {display:inline-block;}
+
+.maillist {padding:1px;border:1px inset #5794BF;height:80px;overflow-y:auto;width:80em;background-color:white;}
+.maillist .inner .value {padding:2px;margin-right:2px;border:medium none;display:inline-block;}
+.maillist .inner .valuehover {padding:1px;background-color:#f0f8f0;border:1px solid #50a05b; }
+.maillist .input {background-color:transparent;border:1px solid #50a05b;clear:none;width:9em;}
+
+
+.lessonlearned .dataListArea {padding-left:0px;width:964px;margin-left:0px;}
+.lessonlearned .dataListArea .dept {width:200px;text-align:left;border-left:dotted 1px #7380af;}
+.lessonlearned .dataListArea .sponsor {width:700px;text-align:left;border-left:dotted 1px #7380af;}
+
+
+.operation {text-align:center;}
+

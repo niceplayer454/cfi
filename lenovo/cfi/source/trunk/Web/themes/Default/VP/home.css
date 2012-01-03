@@ -1,0 +1,104 @@
+﻿#topiclist {
+	border:1px solid #999;
+	margin:8px 16px 8px 16px;
+}
+#topiclist h2 {
+	background:#DDD;
+	margin:0px 0px 0.25em;
+	padding:2px 10px;
+}
+
+#topiclist .status {
+	float:right;
+}
+
+#topiclist .status .item {
+	display:inline-block;
+	width:150px;
+	text-align:left;
+}
+
+#topiclist .topicitem 
+{
+    margin:12px;
+    padding:0px 0px 12px 0px;
+    border-bottom:#ccc 1px dotted;
+    color:#444;
+}
+
+#topiclist .topicitem h3
+{
+    margin:10px 0px;
+    color:#222;
+    font-weight:normal;
+}
+
+#topiclist .topicitem h3 em
+{
+    color:#600;
+	font-size:100%;
+	font-weight:bold;
+	font-style:normal;
+	float:right;
+}
+
+
+#showalltopic 
+{
+    padding:10px;
+	cursor:pointer;
+	color:#369;
+}
+
+#showalltopic a:hover, #showalltopic a:focus, #showalltopic a:active {
+	color:#369;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#summarylist {
+	border:1px solid #999;
+	margin:8px 16px 8px 16px;
+}
+#summarylist h2 {
+	background:#DDD;
+	margin:0px 0px 0.25em;
+	padding:2px 10px;
+}
+
+
+#summarylist .item 
+{
+    margin:12px;
+    padding:0px 0px 8px 4em;
+    border-bottom:#ccc 1px dotted;
+    color:#444;
+}
+
+#summarylist .item em 
+{
+    display:inline-block;
+    font-weight:bold;
+    width:10em;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+﻿.foo {} /* W3C CSS validator likes CSS files to start with a class rather than a comment. Soooooo.... */
+
+html
+{
+	min-width: 800px;
+}
+body
+{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	background-color: #ffffff;
+	font-family: 'Arial', 'Verdana', 'sans-serif', 'Times New Roman', 宋体;
+	font-size: 12px;
+	background-image:url(images/bodyBg.jpg);
+	background-position:top;
+	background-repeat:repeat-x;
+}
+
+div,span,form,ul,li,img,iframe{margin: 0px;border: medium none;padding: 0px;}
+/*input,select,button{margin:0;padding:0;display:inline;}*/
+
+table,td,p {font-size:12px; font-family:'Arial', 'Verdana', 'sans-serif', 'Times New Roman', 宋体;}
+select,input {font-size:12px; font-family:'Arial', 'Verdana', 'sans-serif', 'Times New Roman', 宋体;}
+
+.hide{ display:none}
+.alignCen{margin-left:auto;margin-right:auto}
+.fLeft{float:left}
+.fRig{float:right}
+
+a {color: #0066cc;font-family: 'Arial', 'Verdana', 'sans-serif', 'Times New Roman', 宋体;text-decoration: none;}
+a:active {color: #993399;text-decoration: underline;}
+a:hover {color: #ff3300;text-decoration: underline;}
+
+
+/*header*/
+#header
+{
+	clear:both;
+	margin: 0px auto 0px auto;
+	border:medium none;
+	width:800px;	
+	height:48px;
+	background-color:#074888;
+	text-align:center;
+	line-height:48px;
+	color:#DDDDFF;
+	background-image:url(images/header.png);
+	background-repeat:no-repeat;
+	background-position:98% 50%;
+	border-top: #5A5A7B 1px solid;
+	border-left: #5A5A7B 1px solid;
+	border-right:#5A5A7B 1px solid;
+}
+
+
+/*footer*/
+#footer
+{
+	clear:both;
+	margin: 0px auto;
+	border:medium none;
+	width:802px;	
+	height:50px;
+	text-align:center;
+	line-height:40px;
+	background-image:url(images/footer.png);
+}
+#footer #copyright
+{
+	text-align:center;
+	padding:5px 0px 0px 0px;
+}
+
+#ws
+{
+	clear:both;
+	margin: 0px auto;
+	border:medium none;
+	width:802px;	
+	background-color:#F5F5FA;
+	padding:20px 0px 2px 0px;
+	min-height:430px;
+	_height: 430px;		/*下划线filter*/
+}

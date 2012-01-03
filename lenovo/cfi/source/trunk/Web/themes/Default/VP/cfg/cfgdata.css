@@ -1,0 +1,26 @@
+﻿#relatedoperation {width:1240px;line-height:20px;height:20px;text-align:left;padding:0px 0px 5px 8px;}
+#relatedoperation .op {padding:0px 0px 0px 10px;}
+
+.dataListArea {width:1206px}
+
+.dataListArea .code {width:150px;text-align:left;}
+.dataListArea .title {width:250px;text-align:left;}
+.dataListArea .sort {width:50px;text-align:center;}
+.dataListArea .visible {width:60px;text-align:center;}
+.dataListArea .optor {width:400px;text-align:right;}
+.dataListArea .listOp {}
+
+
+.detail div {display: block;padding: 3px 0px;}
+.detail label.title {width:6em;display:inline-block;
+                     text-align: right;vertical-align:top;
+                     margin-top:0px;
+                     padding:3px 6px 2px 0px;}
+                     
+                     
+.detail .maillist {display:inline-block;}
+
+.maillist {padding:1px;border:1px inset #5794BF;height:80px;overflow-y:auto;width:58em;background-color:white;}
+.maillist .inner .value {padding:2px;margin-right:2px;border:medium none;display:inline-block;}
+.maillist .inner .valuehover {padding:1px;background-color:#f0f8f0;border:1px solid #50a05b; }
+.maillist .input {background-color:transparent;border:1px solid #50a05b;clear:none;width:9em;}

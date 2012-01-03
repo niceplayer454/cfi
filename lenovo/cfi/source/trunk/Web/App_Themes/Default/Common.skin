@@ -1,0 +1,74 @@
+<%@ Register Assembly="TB.Web.Common" Namespace="TB.Web.UI.WebControls" TagPrefix="tbwc" %>
+<%@ Register Assembly="TB.Web.DataControl" Namespace="TB.Web.UI.WebControls" TagPrefix="tbwc" %>
+<%@ Register Assembly="TB.Web.UI.DatePicker" Namespace="TB.Web.UI.WebControls" TagPrefix="tbwc" %>
+<%@ Register Assembly="TB.Web.UI.DatePicker" Namespace="TB.Web.UI.WebControls.Searcher" TagPrefix="tbwc" %>
+<%@ Register Assembly="TB.Web.UI.PopupWin" Namespace="TB.Web.UI.WebControls" TagPrefix="tbwc" %>
+<%@ Register Assembly="TB.Web.UI.Searcher" Namespace="TB.Web.UI.WebControls.Searcher" TagPrefix="tbwc" %>
+
+<%--系统公共的Skin--%>
+
+<%--默认的 Edit 操作 Button和HyperLink--%>
+<asp:button SkinID="EditPrimary" runat="server" CssClass="primary"></asp:button>
+<asp:LinkButton SkinID="EditSecondary" runat="server" CssClass="secondary"></asp:LinkButton>
+<tbwc:ReturnLinkButton SkinID="EditSecondary" runat="server" CssClass="secondary"></tbwc:ReturnLinkButton>
+<asp:HyperLink SkinID="EditSecondary" runat="server" CssClass="secondary"></asp:HyperLink>
+
+
+<%--默认的 只读TextBox--%>
+<asp:TextBox SkinID="ReadonlyTxt" runat="server" ToolTip="ReadOnly" CssClass="readonly"></asp:TextBox>
+
+<%--默认的 只读ToolButton--%>
+<tbwc:ToolButton SkinID="New" runat="server" ><LinkStyle CssClass="tbNew" /></tbwc:ToolButton>
+<tbwc:ToolButton SkinID="Search" runat="server" ><LinkStyle CssClass="tbNew" /></tbwc:ToolButton>
+<tbwc:ToolButton SkinID="Fresh" runat="server" ><LinkStyle CssClass="tbFresh" /></tbwc:ToolButton>
+
+
+<%--默认的 DatePicker--%>
+<tbwc:DatePicker runat="server" CssClass="datePicker" SplitChar="-" ImagesFolder="~/themes/Default/DatePicker/images/" />
+<tbwc:LabelDatePicker runat="server" CssClass="datePicker" SplitChar="-" ImagesFolder="~/themes/Default/DatePicker/images/" />
+
+<%--默认的 SearchPanel--%>
+<tbwc:SearchPanel runat="server" Collapsed="True" CssClass="search" SwitchImageUrl="~/themes/Default/Searcher/collapse.jpg"
+    SwitchCssClass="switch" BarCssClass="bar" ContainerCssClass="container" OpCssClass="op"></tbwc:SearchPanel>
+
+<%--dataList--%>
+<%--List--%>
+<tbwc:GridViewEx SkinID="List" runat="server"></tbwc:GridViewEx>
+<%--Edit--%>
+<asp:ImageButton SkinID="ListEdit" runat="server" ImageUrl="images/button/opEdit.gif" CssClass="opEdit" ></asp:ImageButton>
+<asp:HyperLink SkinID="ListEdit" runat="server" ImageUrl="images/button/opEdit.gif" CssClass="opEdit"></asp:HyperLink>
+<tbwc:ConfirmImageButton SkinID="ListEdit" runat="server" ImageUrl="images/button/opEdit.gif" CssClass="opEdit" ></tbwc:ConfirmImageButton>
+
+<asp:HyperLink SkinID="ListNew" runat="server" ImageUrl="images/button/opNew.gif" CssClass="opEdit"></asp:HyperLink>
+
+<asp:ImageButton SkinID="ListDelete" runat="server" ImageUrl="images/button/opDel.gif" CssClass="opEdit" ></asp:ImageButton>
+<tbwc:ConfirmImageButton SkinID="ListDelete" runat="server" ImageUrl="images/button/opDel.gif" CssClass="opEdit" ></tbwc:ConfirmImageButton>
+
+<asp:ImageButton SkinID="ListAgree" runat="server" ImageUrl="images/button/opAgree.gif" CssClass="opEdit" ></asp:ImageButton>
+<tbwc:ConfirmImageButton SkinID="ListAgree" runat="server" ImageUrl="images/button/opAgree.gif" CssClass="opEdit" ></tbwc:ConfirmImageButton>
+
+<asp:ImageButton SkinID="ListRefuse" runat="server" ImageUrl="images/button/opReject.gif" CssClass="opEdit" ></asp:ImageButton>
+<tbwc:ConfirmImageButton SkinID="ListRefuse" runat="server" ImageUrl="images/button/opReject.gif" CssClass="opEdit" ></tbwc:ConfirmImageButton>
+
+<asp:ImageButton SkinID="ListDetail" runat="server" ImageUrl="images/button/opDetail.png" CssClass="opEdit" ></asp:ImageButton>
+<asp:HyperLink SkinID="ListDetail" runat="server" ImageUrl="images/button/opDetail.png" CssClass="opEdit"></asp:HyperLink>
+
+<asp:HyperLink SkinID="ListInsert" runat="server" ImageUrl="images/button/opInsert.gif" CssClass="opEdit"></asp:HyperLink>
+<asp:ImageButton SkinID="ListInsert" runat="server" ImageUrl="images/button/opInsert.gif" CssClass="opEdit" ></asp:ImageButton>
+
+
+<asp:ImageButton SkinID="ListDown" runat="server" ImageUrl="images/button/down.png" CssClass="opEdit" ></asp:ImageButton>
+<asp:ImageButton SkinID="ListUp" runat="server" ImageUrl="images/button/up.png" CssClass="opEdit" ></asp:ImageButton>
+<asp:ImageButton SkinID="ListSave" runat="server" ImageUrl="images/button/save.png" CssClass="opEdit" ></asp:ImageButton>
+<tbwc:ConfirmImageButton SkinID="ListWithdraw" runat="server" ImageUrl="images/button/withdraw.png" CssClass="opEdit" ></tbwc:ConfirmImageButton>
+
+
+<asp:HyperLink SkinID="ListSave" runat="server" ImageUrl="images/button/file.gif" CssClass="opEdit" ></asp:HyperLink>
+
+<asp:HyperLink SkinID="ListCopy" runat="server" ImageUrl="images/button/up.gif" CssClass="opEdit"></asp:HyperLink>
+<asp:Image SkinID="ListCopy" runat="server" ImageUrl="images/button/up.png" CssClass="opEdit" />
+
+<tbwc:ConfirmImageButton SkinID="ListFileRemove" runat="server" ImageUrl="images/button/smallDelete.png" CssClass="opEdit" ></tbwc:ConfirmImageButton>
+
+
+<asp:HyperLink SkinID="Edit" runat="server" ImageUrl="images/button/opEdit.gif" CssClass="edit"></asp:HyperLink>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<log4net>
+  <!--
+        Loggers define indicate which packages/categories are logged, at which level, and to which appender.
+        Levels: ALL, ERROR, WARN, INFO, DEBUG, TRACE, OFF
+  -->
+  <!-- 
+        Logging appenders define where and how logging messages are logged.
+        http://logging.apache.org/log4net/release/config-examples.html
+  -->
+
+  <!--============================================================-->
+  <!--  Appender                                                  -->
+  <!--============================================================-->
+  <appender name="UdpAppender" type="log4net.Appender.UdpAppender">
+    <localPort value="8188" />
+    <remoteAddress value="127.0.0.1" />
+    <remotePort value="8088" />
+    <layout type="log4net.Layout.PatternLayout, log4net">
+      <conversionPattern value="%date [%thread] {%level} %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+  <appender name="CFI_AUDIT" type="log4net.Appender.RollingFileAppender">
+    <file value="H:\SoftDev\Lenovo\CFI\WS\Web\logs\audit\audit.log." />
+    <appendToFile value="true" />
+    <encoding value="utf-8" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" />
+    <rollingStyle value="Date" />
+    <datePattern value="yyyyMMdd" />
+    <StaticLogFileName value="false" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%message%newline" />
+    </layout>
+  </appender>
+  <appender name="CFI_DEBUG" type="log4net.Appender.RollingFileAppender">
+    <file value="H:\SoftDev\Lenovo\CFI\WS\Web\logs\debug\process.log" />
+    <appendToFile value="true" />
+    <encoding value="utf-8" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" />
+    <rollingStyle value="Date" />
+    <datePattern value="yyyyMMdd" />
+    <StaticLogFileName value="false" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+  <!--============================================================-->
+  <!--  logger                                                    -->
+  <!--============================================================-->
+  <logger name="Lenovo.CFI">
+    <level value="ALL" />
+    <appender-ref ref="CFI_DEBUG" />
+  </logger>
+
+  <!--所有的 log 
+      WARN Level [RELEASE] ==> UdpAppender
+      ALL  Level [DEBUG]   ==> UdpAppender -->
+  <root>
+    <level value="ALL" />
+    <appender-ref ref="UdpAppender" />
+  </root>
+</log4net>
